@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/deleteQuestionADLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/focusedBackground">
+
+    <TextView
+        android:id="@+id/deletionTextADTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Are you sure to delete this"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/deletionADOKButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/design_default_color_error"
+        app:layout_constraintBottom_toBottomOf="@+id/deletionADCancelButton"
+        app:layout_constraintStart_toStartOf="@+id/deletionTextADTV"
+        app:layout_constraintTop_toTopOf="@+id/deletionADCancelButton" />
+
+    <Button
+        android:id="@+id/deletionADCancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:text="Cancel"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/deletionADOKButton"
+        app:layout_constraintTop_toBottomOf="@+id/deletionTextADTV" />
+</androidx.constraintlayout.widget.ConstraintLayout>

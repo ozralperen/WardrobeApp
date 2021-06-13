@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/createUpdateDrawerRL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_background"
+    android:orientation="vertical"
+    tools:context=".CreateUpdateDrawerActivity">
+
+    <EditText
+        android:id="@+id/createUpdateDrawerNameET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Drawer Name"
+        android:textColor="@color/white"
+        android:textColorHint="@android:color/darker_gray" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/createSaveDrawerButton"
+        android:layout_below="@+id/createUpdateDrawerNameET"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/clothesDrawerLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/createSaveDrawerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@color/accept_green"
+        android:text="Save"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/accept_green" />
+</RelativeLayout>
